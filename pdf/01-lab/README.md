@@ -13,7 +13,7 @@ In this lab you will:
 Bulld a local image using Docker build
 
 ```
-docker built -t rosera/pdftk:0.1 .
+docker build -t rosera/pdftk:0.1 .
 ```
 
 ## Test it locally
