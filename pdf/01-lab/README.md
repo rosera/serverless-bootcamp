@@ -3,7 +3,7 @@ Add a command line tool from a Docker image
 
 In this lab you will:
 
-* Build a Dockerfile for pdftk
+* Build a Dockerfile for [pdftk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
 * Test it locally
 * Script the command to take arguments
 * Fix filenames with spaces and commas
@@ -20,18 +20,24 @@ docker build -t rosera/pdftk:0.1 .
 
 Once successfully built, we will need a local doc to test against. Lets use the Dockerfile.
 
+Lets read a PDF and cut the 1st page and create a new pdf doc with it
+
 ```
-docker run --rm -d -v `pwd`/convert:/convert rosera/pdftk:0.1 /convert/Dockerfile
+docker run --rm -d -v `pwd`/input:/input -v `pwd`/output:/output --user $(id -u):$(id -g) rosera/pdftk:0.1 input/[FILENAME] cat 1 output/[FILENAME]
 ```
 
 ## Create an environment variable
+
+In the above example, we can replace the filename and number of pages with environment variables
+
 ```
-FILE_TO_CONVERT="/convert/Dockerfile"
+FILE_TO_CONVERT="[FILENAME]"
+PAGES_TO_CUT="[#PAGES]"
 ```
 
 Use the environment variable to call our application
 ```
-docker run --rm -d -v `pwd`/convert:/convert rosera/pdftk:0.1 $FILE_TO_CONVERT
+docker run --rm -d -v `pwd`/input:/input -v `pwd`/output:/output --user $(id -u):$(id -g) rosera/pdftk:0.1 input/$FILE_TO_CONVERT cat $PAGES_TO_CUT output/$FILE_TO_CONVERT
 ```
 
 ## Make a script to perform a bulk conversion of files to PDF
