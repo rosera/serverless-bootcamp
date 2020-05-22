@@ -14,9 +14,8 @@ The code below represents a simple web form. The user will be required to:
 ## Building the web page
 
 * Create a file called `index.html`
-* Add the following code show to the `index.html` file
+* Add the following code to the `index.html` file
 
-`index.html` 
 
 ```
 <!DOCTYPE html>
@@ -43,7 +42,8 @@ The code below represents a simple web form. The user will be required to:
 
 ## Running the code
 
-* Open the file in a browser
+* Open the file `index.html` in a browser
 
 ## Example Output
+
 
