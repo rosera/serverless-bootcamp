@@ -10,16 +10,11 @@ The code below represents a simple web form. The user will be required to:
 * Enter a numeric value
 * Press the button to show an output 
 
-### Running the code
 
-To run the code, simply open the file created in a browser.
+## Building the web page
 
-### HTML example code - index.html
-
-* Creae a file called index.html
-* Add the following code to it
-* Save the file
-* Open the file in a browser
+* Create a file called `index.html`
+* Add the following code to the `index.html` file
 
 
 ```
@@ -41,5 +36,14 @@ To run the code, simply open the file created in a browser.
 </body>
 </html>
 ```
+
+* Save the file as `index.html`
+
+
+## Running the code
+
+* Open the file `index.html` in a browser
+
+## Example Output
 
 
