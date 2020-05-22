@@ -16,11 +16,12 @@ To run the code, simply open the file created in a browser.
 
 ### HTML example code - index.html
 
-* Creae a file called index.html
-* Add the following code to it
+* Create a file called `index.html`
+* Add the following code show below marked index.html
 * Save the file
 * Open the file in a browser
 
+index.html 
 
 ```
 <!DOCTYPE html>
