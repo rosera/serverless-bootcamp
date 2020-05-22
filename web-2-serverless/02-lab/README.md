@@ -1,5 +1,5 @@
 # Hello Javascript
-  
+
 ## Scenario
 
 Add some Javascript code to the HTML page to perform a calculation:
