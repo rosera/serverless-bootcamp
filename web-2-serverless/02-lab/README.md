@@ -42,10 +42,24 @@ outputControl.textContent = '';
 
 ### Add an Event Listener
 
+The event listener is called when our application generates an event.
+In this instance, pressing the button is the event we are interested in.
+
+* event.preventDefault();
+* parseInt
+* calculate Hectares to Acres
+* Show the calculation result
+
 ```
-TBD
+formControl.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (parseInt(inputControl.value)) {
+    const calcResult = (inputControl.value * 2.4711).toFixed(2);
+    outputControl.textContent = inputControl.value.toString() + " Hectares is " + calcResult.toString() + " Acres";
+  }
+})
 ```
- 
 
 * Save the file as `app.js`
 
@@ -56,7 +70,7 @@ TBD
 * Enter a value in the input box
 * Select the convert button
 * An answer is displayed onscreen
-*
+
 
 ## Example Output
  
