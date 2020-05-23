@@ -2,13 +2,13 @@
 
 ## Scenario
 
-Build a simple web page to convert Hectares to Acres
-
-
-The code below represents a simple web form. The user will be required to:
+In this lab you will build a web page. The web page will convert Hectares to Acres. 
+The code below represents a simple web form. In the exmaple the user will be required to:
 
 * Enter a numeric value
-* Press the button to show an output 
+* Press the button to display an output 
+
+At the end of this example you will have a web page that renders the example content.
 
 
 ## Building the web page
@@ -38,6 +38,14 @@ The code below represents a simple web form. The user will be required to:
 ```
 
 * Save the file as `index.html`
+
+The above code presents a HTML page using a form to capture user data.
+
+* define a header 
+* define a form
+** input control to enter a measurement
+** button control to initiate an event
+
 
 
 ## Running the code
