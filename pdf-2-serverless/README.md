@@ -5,11 +5,11 @@ Quick examples to introduce serverless on GCP
 
 PDF manipulation using PDFTK
 
-* Lesson 1: Add a command line tool from a Docker image
-* Lesson 2: Express.js
-* Lesson 3: Moving to the Cloud
-* Lesson 4: Finalise the service
-
+* [Lesson 1](https://github.com/rosera/serverless-bootcamp/blob/master/pdf-2-serverless/01-lab/README.md): Add a command line tool from a Docker image
+* [Lesson 2](https://github.com/rosera/serverless-bootcamp/blob/master/pdf-2-serverless/02-lab/README.md): Express.js
+* [Lesson 3](https://github.com/rosera/serverless-bootcamp/blob/master/pdf-2-serverless/03-lab/README.md): Moving to the Cloud
+* [Lesson 4](https://github.com/rosera/serverless-bootcamp/blob/master/pdf-2-serverless/04-lab/README.md): Finalise the service
+* [Lesson 5](https://github.com/rosera/serverless-bootcamp/blob/master/pdf-2-serverless/05-lab/README.md): Into the Cloud
 
 # Initial Build
 docker build -t pdftk:0.1 .
