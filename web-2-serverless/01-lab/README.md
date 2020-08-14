@@ -54,4 +54,4 @@ The above code presents a HTML page using a form to capture user data.
 
 ## Example Output
 
-
+![web-app](https://github.com/rosera/serverless-bootcamp/blob/master/web-2-serverless/images/01-lab-web-app.png "Basic HTML app")
