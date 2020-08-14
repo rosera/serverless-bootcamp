@@ -1,13 +1,13 @@
-# Hello Javascript
+# Hello JavaScript 
 
 ## Scenario
 
-Add some Javascript code to the HTML page to perform a calculation:
+Add some JavaScript (js) code to the HTML page to perform a calculation:
 
 * Hectares to Acres
 
  
-## Developing the Javascript
+## Developing with JavaScript
  
 Our app will take the content entered on the form and perform a calculation
 
@@ -24,7 +24,6 @@ In our application, we will reference the following onscreen controls:
 * Input
 * Output
 
-
 ```
 const formControl   = document.querySelector('form');
 const inputControl  = document.querySelector('input');
@@ -34,13 +33,13 @@ const outputControl = document.querySelector('#conversion');
 ### Initialise control(s)
 
 Once we have access to the onscreen controls, we can update their value.
-To initialise a control to blank use the `text.Content` property e.g.
+To initialise the input field to blank use the `text.Content` property e.g.
 
 ```
 outputControl.textContent = '';
 ```
 
-### Add an Event Listener
+### Add a JavaScript Event Listener
 
 The event listener is called when our application generates an event.
 In this instance, pressing the button is the event we are interested in.
@@ -66,10 +65,10 @@ formControl.addEventListener('submit', (event) => {
  
 ## Running the code
  
-* Open the file `index.html` in a browser
-* Enter a value in the input box
-* Select the convert button
-* An answer is displayed onscreen
+1. Open the file `index.html` in a browser
+2. Enter a value in the input box
+3. Select the convert button
+4. An answer is displayed onscreen
 
 
 ## Example Output
