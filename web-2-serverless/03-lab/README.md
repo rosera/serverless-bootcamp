@@ -81,3 +81,17 @@ With the addition of the CSS file, the page content will now render centrally an
 
 ## Example Output
 
+#### Display the web content
+
+| Before - No CSS | After - With CSS |
+|-----------------|------------------|
+|![web-app](https://github.com/rosera/serverless-bootcamp/blob/master/web-2-serverless/images/01-lab-web-app.png "Basic HTML app") | ![web-app](https://github.com/rosera/serverless-bootcamp/blob/master/web-2-serverless/images/03-lab-web-app-css-1.png "Basic HTML with CSS") |
+
+
+#### Adding the call to JavaScript renders a conversion
+
+| Before - No CSS | After - With CSS |
+|-----------------|------------------|
+|![web-app with js](https://github.com/rosera/serverless-bootcamp/blob/master/web-2-serverless/images/02-lab-web-app-js.png "Basic HTML with js") | ![web-app with js](https://github.com/rosera/serverless-bootcamp/blob/master/web-2-serverless/images/03-lab-web-app-css-2.png "Basic HTML with js")
+
+
