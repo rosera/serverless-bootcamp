@@ -53,24 +53,21 @@ Return the information back via json
 
 
 #### Deploy the Cloud Functions
-
+ 
 Duration
 ```
-gcloud functions deploy cka-duration --runtime nodejs10 --trigger-http --allow-unauthenticat
-ed
+gcloud functions deploy cka-duration --runtime nodejs10 --trigger-http --allow-unauthenticated
 ```
 
 
 Cert
 ```
-gcloud functions deploy cka-cert --runtime nodejs10 --trigger-http --allow-unauthenticat
-ed
+gcloud functions deploy cka-cert --runtime nodejs10 --trigger-http --allow-unauthenticated
 ```
 
 Provider
 ```
-gcloud functions deploy cka-provider --runtime nodejs10 --trigger-http --allow-unauthenticat
-ed
+gcloud functions deploy cka-provider --runtime nodejs10 --trigger-http --allow-unauthenticated
 ```
  
 Test the deployed Cloud Function
