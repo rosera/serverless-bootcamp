@@ -22,52 +22,67 @@ The Cloud Function should meet the following requirements:
 
 ### Node Version
 
-* Request Object - contains the Exam
-* Pass query arguments to the Cloud Function
-* Process the arguments
-* Return certification json
-
-
-#### Request Object - contains the Exam
-
 Amend the Cloud Function request object to access the exam information
 
-* Change message to query
+* Request Object - contains the Exam
+* Pass query arguments to the Cloud Function
+* Process the arguments - use dummy information
+* Return the information back via json
 
 
-#### Pass query arguments to the Cloud Function
-Pass the query in the request parameters
+Duration - standard time
 
-* Duration - standard time
-* Exam Guide - standard link
-* Provider - standard information source
+```
+// Create a Cloud Function
+exports.duration=(req, res) => {
+  let message = req.query.message || req.body.message || 'Called duration';
 
-#### Process the arguments
+  console.log (`Cloud Function Duration`);
+  res.status(200).send({status:200, msg:message});
+};
+```
 
-Process the request to provide the requested information
+Exam Guide - standard link
 
-* Return dummy information
+```
+// Create a Cloud Function
+exports.cert=(req, res) => {
+  let message = req.query.message || req.body.message || 'Called certification';
 
-#### Return certification json
-Return the information back via json
+  console.log (`Cloud Function Exam Guide`);
+  res.status(200).send({status:200, msg:message});
+};
+```
+
+Provider - standard information source
+
+```
+// Create a Cloud Function
+exports.provider=(req, res) => {
+  let message = req.query.message || req.body.message || 'Called provider!';
+
+  console.log (`Cloud Function Provider`);
+  res.status(200).send({status:200, msg:message});
+};
+```
 
 
 #### Deploy the Cloud Functions
  
 Duration
 ```
-gcloud functions deploy cka-duration --runtime nodejs10 --trigger-http --allow-unauthenticated
+gcloud functions deploy duration --runtime nodejs10 --trigger-http --allow-unauthenticated
 ```
 
 
 Cert
 ```
-gcloud functions deploy cka-cert --runtime nodejs10 --trigger-http --allow-unauthenticated
+gcloud functions deploy cert --runtime nodejs10 --trigger-http --allow-unauthenticated
 ```
 
 Provider
 ```
-gcloud functions deploy cka-provider --runtime nodejs10 --trigger-http --allow-unauthenticated
+gcloud functions deploy provider --runtime nodejs10 --trigger-http --allow-unauthenticated
 ```
  
 Test the deployed Cloud Function
