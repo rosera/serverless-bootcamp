@@ -1,0 +1,49 @@
+{
+  "Translations": [
+    {
+      "language":"French",
+      "flag": "https://www.countryflags.io/FR/shiny/64.png",
+      "translate": "fr" 
+    },
+    {
+      "language":"Spanish",
+      "flag": "https://www.countryflags.io/ES/shiny/64.png",
+      "translate": "es" 
+    },
+    {
+      "language":"Japanese",
+      "flag": "https://www.countryflags.io/JP/shiny/64.png",
+      "translate": "ja" 
+    },
+    {
+      "language":"Chinese - Simplifed",
+      "flag": "https://www.countryflags.io/CN/shiny/64.png",
+      "translate": "zh" 
+    },
+    {
+      "language":"Brazil",
+      "flag": "https://www.countryflags.io/BR/shiny/64.png",
+      "translate": "pt" 
+    },
+    {
+      "language":"Russian",
+      "flag": "https://www.countryflags.io/RU/shiny/64.png",
+      "translate": "ru" 
+    },
+    {
+      "language":"India",
+      "flag": "https://www.countryflags.io/IN/shiny/64.png",
+      "translate": "hi" 
+    },
+    {
+      "language":"Bangladesh",
+      "flag": "https://www.countryflags.io/BD/shiny/64.png",
+      "translate": "bn" 
+    },
+    {
+      "language":"England",
+      "flag": "https://www.countryflags.io/GB/shiny/64.png",
+      "translate": "en" 
+    }
+  ]
+}
