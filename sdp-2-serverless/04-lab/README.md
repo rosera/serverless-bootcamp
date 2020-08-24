@@ -2,26 +2,30 @@
 
 ## Scenario
 
-Learn to build a statice web page that presents a grid of different languages.
-The structure and template code have been created for you. You are welcome :-)
+In this example, the backend code will be introduced based on [Google Cloud Translate](https://cloud.google.com/translate/docs/languages).
 
-* Added a entry form
+- [X] HTML dynamic view
+- [x] [Google Cloud Functions](https://cloud.google.com/functions)
 
-Directory Structure
+From here connect the frontend web service to the backend Cloud Functions to make a translation service. The languages to be processed are controlled via a
+json data file.
 
-* public - directory to hold web files e.g. css/scripts/images
-* partials - directory to hold web fragments
-* views - directory to hold webpage template
-* data - directory to hold json information
+## Backend - Google Cloud Function
 
-Code Structure
+- [X] Active [Google Cloud project](https://cloud.google.com/free)
+- [X] Cloud Shell
+- [X] Cloud Functions Deploy
+- [x] Googleapis via unauthenticated call
 
-* index.js - responsible for the page rendering and general directory setup
-* package.json - holds the dependencies
+To deploy the code 
 
+## Frontend - HTML Web
 
+### Running the code using Node
 
-## Running the code using Node
+- [X] JSON configuration file - defines the languages presented on screen
+- [X] Node environment supported added
+- [X] Frontend uses Port 8080
 
 * From the command line, use `npm start` to run the app
 * View the running application at `localhost:8080`
