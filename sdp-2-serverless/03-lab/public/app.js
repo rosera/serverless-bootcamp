@@ -4,6 +4,18 @@ const msgGB    = document.querySelector('#msgGB');
 const msgFR    = document.querySelector('#msgFR');
 const msgCN    = document.querySelector('#msgCN');
 
+let jsonData;
+let filename = "data/language.json";
+
+fetchAsyncLocalData();
+
+// Load the information from the data directory
+async function fetchAsyncLocalData(){
+  // Await the fetch
+  const data = await(fetch(filename));
+  jsonData = await data.json();
+}
+
 // Link to form button event
 btnForm.addEventListener('click', (event) => {
   // Get the message entered on the form
