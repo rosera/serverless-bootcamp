@@ -1,10 +1,10 @@
 // Add some JavaScript variables
-const filename = "data/language2.json"; 
+const filename = "data/language.json"; 
 const btnForm  = document.querySelector('#btn');
 
 let jsonData;
 let jsonTranslate;
-const URL_ENDPOINT="https://us-central1-roselabs-212512.cloudfunctions.net/translate-service";
+const URL_ENDPOINT="";
 
 // Read the contents of the json file
 fetchAsyncLocalData();
@@ -15,9 +15,6 @@ async function fetchAsyncLocalData() {
   const data = await(fetch(filename));
   // Await the data being available
   jsonData = await data.json();
-
-  console.log(jsonData);
-//  return jsonInfo;
 }
 
 // Perform the update of the HTML element
@@ -60,7 +57,7 @@ function setViewContent(items){
     <div class="grid-item">
       <h2>${item.language}</h2>
       <img src=${item.flag} alt="${item.language}">
-      <h3 id="${item.translate}">${item.language}</h3>
+      <h2 id="${item.translate}">${item.language}</h2>
      </div>`;
   });
 
@@ -71,7 +68,6 @@ function setViewContent(items){
 
 // Build onscreen information
 function getLanguageView() {
-  console.log('buildDataDisplay(): Called');
   languageGrid = document.querySelector('#grid');
   languageGrid.innerHTML = setViewContent(jsonData.Translations);
 }
