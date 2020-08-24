@@ -2,8 +2,8 @@
 
 ## Scenario
 
-Learn to build a statice web page that presents a grid of different languages.
-The structure and template code have been created for you. You are welcome :-)
+Learn to build a static web page that presents a grid of different languages.
+The structure and template code have already been created for you.
 
 * Added a entry form
 
