@@ -13,7 +13,7 @@ A combination of a HTML web app and Cloud Functions
 ### Cloud Functions
 
 ```
-gcloud functions deploy text-translate \
+gcloud functions deploy speech-translate \
   --entry-point apiTranslate \
   --runtime nodejs10 \
   --trigger-http \
