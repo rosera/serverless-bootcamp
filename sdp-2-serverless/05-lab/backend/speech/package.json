@@ -1,0 +1,16 @@
+{
+  "name": "speech-master",
+  "version": "1.0.0",
+  "description": "This is a test of the Google Cloud Speech API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rich Rose",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.2.0",
+    "@google-cloud/storage": "^3.0.3",
+    "@google-cloud/text-to-speech": "^1.1.2"
+  }
+}

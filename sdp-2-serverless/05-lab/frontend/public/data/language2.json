@@ -1,0 +1,16 @@
+{
+  "Translations": [
+    {
+      "language":"French",
+      "flag": "https://www.countryflags.io/FR/shiny/64.png",
+      "text": "fr", 
+      "speech": "fr-FR"
+    },
+    {
+      "language":"Spanish",
+      "flag": "https://www.countryflags.io/ES/shiny/64.png",
+      "text": "es", 
+      "speech": "es-ES"
+    }
+  ]
+}
