@@ -13,11 +13,6 @@ A combination of a HTML web app and Cloud Functions
 ### Cloud Functions
 
 ```
-gcloud functions deploy speech-translate \
-  --entry-point apiTranslate \
-  --runtime nodejs10 \
-  --trigger-http \
-  --region us-central1 \
-  --allow-unauthenticated
+gcloud functions deploy speech-translate --entry-point apiSpeech --runtime nodejs10 --trigger-http --region us-central1 --allow-unauthenticated
 ```
 
