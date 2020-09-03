@@ -2,24 +2,28 @@
 
 ## Scenario
 
-In this example, the backend code will be introduced based on [Google Cloud Translate](https://cloud.google.com/translate/docs/languages).
+This example uses updates a web based application to use googleapis. In the demo, the web application will use the [Google Cloud Translate]((https://cloud.google.com/translate/docs/languages)) api to translate a message to a a defined language.
 
-- [X] HTML dynamic view
-- [x] [Google Cloud Functions](https://cloud.google.com/functions)
+![architecture](https://github.com/rosera/serverless-bootcamp/blob/master/sdp-2-serverless/images/04-arch-small-talk.png "Small Talk architecture")
 
-From here connect the frontend web service to the backend Cloud Functions to make a translation service. The languages to be processed are controlled via a
-json data file.
+From the above diagram there are two elements to the application
+
+* Backend - [Google Cloud Function](https://cloud.google.com/functions)
+* Frontend - HTML, CSS, Javascript
 
 ## Backend - Google Cloud Function
+
+To implement the backend Cloud Function, use the following:
 
 - [X] Active [Google Cloud project](https://cloud.google.com/free)
 - [X] Cloud Shell
 - [X] Cloud Functions Deploy
 - [x] Googleapis via unauthenticated call
 
-To deploy the code 
 
 ## Frontend - HTML Web
+
+To implement the frontend, use the following:
 
 ### Running the code using Node
 
