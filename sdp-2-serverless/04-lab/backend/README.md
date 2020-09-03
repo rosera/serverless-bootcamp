@@ -1,23 +1,36 @@
 # Serverless Days Demo
 
-## Small Talk
+In this section 
 
+- [x] Cloud the repo
+- [x] Move to the working directory
+- [x] Set the Google Cloud project in cloud shell
+- [x] Deploy the Cloud Function
+- [x] Copy the URL of the deployed Cloud Function
 
-A combination of a HTML web app and Cloud Functions
+### Repo
+Clone the repository
+```
+git clone https://github.com/rosera/serverless-bootcamp.git
+```
 
-
-### Web Application
-
+Change to the correct working directory
+```
+cd serverless-bootcamp/sdp-2-serverless/04-lab/backend
+```
 
 
 ### Cloud Functions
 
+Set up the project - replace PROJECT_ID with a valid reference for your account
 ```
-gcloud functions deploy gsp328-translate \
-  --entry-point apiTranslate \
-  --runtime nodejs10 \
-  --trigger-http \
-  --region us-central1 \
-  --allow-unauthenticated
+gcloud config set project [PROJECT_ID]
 ```
 
+Deploy the cloud function
+
+```
+gcloud functions deploy translate-api --entry-point apiTranslate --runtime nodejs10 --trigger-http --region us-central1 --allow-unauthenticated
+```
+
+Copy the URL for the function - need to paste this into the frontend web application
