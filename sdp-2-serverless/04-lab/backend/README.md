@@ -2,7 +2,7 @@
 
 In this section 
 
-- [x] Cloud the repo
+- [x] Clone the repo
 - [x] Move to the working directory
 - [x] Set the Google Cloud project in cloud shell
 - [x] Deploy the Cloud Function
