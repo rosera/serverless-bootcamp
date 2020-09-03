@@ -1,0 +1,58 @@
+{
+  "Translations": [
+    {
+      "language":"French",
+      "flag": "https://www.countryflags.io/FR/shiny/64.png",
+      "text": "fr", 
+      "speech": "fr-FR"
+    },
+    {
+      "language":"Spanish",
+      "flag": "https://www.countryflags.io/ES/shiny/64.png",
+      "text": "es", 
+      "speech": "es-ES"
+    },
+    {
+      "language":"Japanese",
+      "flag": "https://www.countryflags.io/JP/shiny/64.png",
+      "text": "ja", 
+      "speech": "ja-JP"
+    },
+    {
+      "language":"Chinese - Simplifed",
+      "flag": "https://www.countryflags.io/CN/shiny/64.png",
+      "text": "zh", 
+      "speech": "cmn-CN"
+    },
+    {
+      "language":"Brazil",
+      "flag": "https://www.countryflags.io/BR/shiny/64.png",
+      "text": "pt", 
+      "speech": "pt-BR"
+    },
+    {
+      "language":"Russian",
+      "flag": "https://www.countryflags.io/RU/shiny/64.png",
+      "text": "ru", 
+      "speech": "ru-RU"
+    },
+    {
+      "language":"India",
+      "flag": "https://www.countryflags.io/IN/shiny/64.png",
+      "text": "hi", 
+      "speech": "hi-In"
+    },
+    {
+      "language":"Bangladesh",
+      "flag": "https://www.countryflags.io/BD/shiny/64.png",
+      "text": "bn", 
+      "speech": "bn-In"
+    },
+    {
+      "language":"England",
+      "flag": "https://www.countryflags.io/GB/shiny/64.png",
+      "text": "en", 
+      "speech": "en-GB"
+    }
+  ]
+}

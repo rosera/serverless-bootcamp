@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>speechgraphic</title>
+    <!-- Include Google fonts: Frijole, Open Sans, Oswald -->
+    <link href="https://fonts.googleapis.com/css?family=Frijole|Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <!-- Normalize browser styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+    <!-- Link to app.js with defer till HTML render -->
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Serverless Demo</h2>
+        <h1>Small Talk</h1>
+        <h3>Time to make a conversation</h3>
+    </header>
+    <!-- Form to get user input -->
+    <form id="entry-form">
+      <div class="form-container">
+        <p>Message:</p>
+        <input id="message" class="form-field__full" type="name" name="message"/>
+        <div id="btn">Translate Me!</div>
+      </div>
+    </form>
+      <!-- .grid to attach tiles to -->
+      <main id="grid"></main>
+    <footer>
+      <!-- Include information source -->
+      <p class="fine-print">Learning is fun.</p>
+      <p class="fine-print">Flags sourced from <a href="https://www.countryflags.io"/>Country Flags</a>.</p>
+      <p class="fine-print">Google <a href="https://cloud.google.com/translate/docs/languages">Cloud Translate</a> language support.</p>
+    </footer>
+</body>
+</html>
