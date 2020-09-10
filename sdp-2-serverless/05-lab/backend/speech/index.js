@@ -74,6 +74,6 @@ async function googleSpeechAPI(req, res) {
 }
 
 // Create a audio file based on the message sent
-exports.helloSpeech=(req, res)=>{
+exports.apiSpeech=(req, res)=>{
   googleSpeechAPI(req, res);
 }
