@@ -2,7 +2,7 @@
 
 ## Scenario
 
-Learn to build a statice web page that presents a grid of different languages.
+Learn to build a static web page that presents a grid of different languages.
 
 ## Building the web page
 
