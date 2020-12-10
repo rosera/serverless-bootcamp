@@ -1,41 +1,51 @@
 # Frontend
 
-## Update the application variables
 
-- [ ] TEXT_ENDPOINT is the URL for the deployed Text Function e.g. `URL/text-to-translation`
-- [ ] SPEECH_ENDPOINT is the URL for the deployed Speech Function e.g `URL/text-to-speech`
-- [ ] STORAGE_BUCKET is the storage.googleapis.com URL e.g. `https://googleapis.com/MY_BUCKET`
-
-Optional:
-
-Amend the language JSON file to include your favourite languages
+## Clone t
 
 
-## Build an image
+## Language Setup
 
-Build the image and push to Container Regisitry
+Languages are dynamically enabled via the `language.json` file
+
+An example language file is provided in the `public/data/` directory e.g.
 
 ```
-gcloud builds submit --tag gcr.io/$GOOGLE_CLOUD_PROJECT/frontend
+{
+  "Translations": [
+    {
+      "language":"French",
+      "flag": "https://www.countryflags.io/FR/shiny/64.png",
+      "text": "fr", 
+      "speech": "fr-FR"
+    }
+  ]
+}
 ```
 
+The main things to note about this files fields:
 
-## Deploy Cloud Run
-
-
-* Set the Cloud Run region
-```
-gcloud config set run/region us-central1
-```
-
-* Set the Cloud Run platform to managed
-```
-gcloud config set run/platform managed
-```
+* language - name of the Language
+* flag - image url for the flag to be displayed
+* text - language for [text translation](https://cloud.google.com/translate/docs/languages)
+* speech - language for the [speech translation](https://cloud.google.com/text-to-speech/docs/voices) 
 
 
-Deploy an image to Cloud Run
 
-```
-gcloud run deploy small-talk --image gcr.io/$GOOGLE_CLOUD_PROJECT/frontend --allow-unauthenticated
-```
+## Backend Setup
+
+
+- [ ] Enable Speech Googleapi
+- [ ] Enable Text Googleapis
+
+
+## Frontend Setup
+
+- [ ] Enable region
+- [ ] Enable Cloud Run Managed Platform
+- [ ] Replace the TEXT_ENDPOINT with the Text Cloud Function URL
+- [ ] Replace the SPEECH_ENDPOINT with the Speech Cloud Function URL
+- [ ] Replace the STORAGE_BUCKET with the PROJECT based storage location
+
+
+ 
