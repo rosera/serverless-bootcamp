@@ -1,8 +1,7 @@
 // TODO: Cleanup code
-
-const TEXT_ENDPOINT  = "TEXT_CLOUD_FUNCTION_URL";
-const AUDIO_ENDPOINT = "AUDIO_CLOUD_FUNCTION_URL";
-const STORAGE_BUCKET = "STORAGE_BUCKET_URL";
+const TEXT_ENDPOINT  = "https://us-central1-qwiklabs-gcp-04-2864df0875a3.cloudfunctions.net/text-to-translation";
+const SPEECH_ENDPOINT  = "https://us-central1-qwiklabs-gcp-04-2864df0875a3.cloudfunctions.net/text-to-speech";
+const STORAGE_BUCKET = "https://storage.googleapis.com/qwiklabs-gcp-04-2864df0875a3-audio"
 const FILENAME       = "data/language3.json"; 
 const btnForm        = document.querySelector('#btn');
 
@@ -26,7 +25,7 @@ async function fetchAsyncLocalData(url) {
   jsonData = await response.json();
 }
 
-  // --------------------- Messy FETCH  -----------------------
+// --------------------- Messy FETCH  -----------------------
 
 
 
@@ -40,11 +39,13 @@ function getRandomFilename(){
 async function processSpeechEndpoint(textToSpeech, speech){
   // --------------------- FETCH AUDIO -----------------------
   let filename = getRandomFilename();
-  let url = AUDIO_ENDPOINT + '?msg=' + textToSpeech + '&fname=' + filename + '&lang=' + speech;
+  let url = SPEECH_ENDPOINT + '?msg=' + textToSpeech + '&fname=' + filename + '&lang=' + speech;
+  console.log(`SPEECH_URL: ${URL}`);
   // Initiate translation of text to speech - output goes to Cloud Storage
   await getDataAsync(url);
   let htmlElement2 = document.querySelector(`#${speech}`);
-  let myElement = '<source src="' + STORAGE_BUCKET + filename + '.mp3" type="audio/mpeg">'
+  let myElement = '<source src="' + STORAGE_BUCKET + '/' + filename + '.mp3" type="audio/mpeg">'
+  console.log(`FILE: ${myElement}`);
   htmlElement2.innerHTML = myElement;
   // --------------------- FETCH AUDIO -----------------------
 }

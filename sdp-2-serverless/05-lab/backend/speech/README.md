@@ -1,18 +1,42 @@
-# Serverless Days Demo
+# Small Talk
 
-## Small Talk
+Google Cloud Serverless example
 
+### API
 
-A combination of a HTML web app and Cloud Functions
+- [ ] Enable the TextToSpeech API
 
+## Create a Storage Bucket for the Audio files
 
-### Web Application
+* Create a environment variable for the bucket name
 
+```
+STORAGE_BUCKET="$GOOGLE_CLOUD_PROJECT-audio"
+```
+
+* Create a bucket using the environment variable
+
+```
+gsutil mb gs://$STORAGE_BUCKET
+```
 
 
 ### Cloud Functions
 
+
+- [ ] Uses the TextToSpeech API
+- [ ] Deploy the Cloud Function
+- [ ] Sets default translation to French - can be overriden
+- [ ] Include environment variable
+
+
 ```
-gcloud functions deploy speech-translate --entry-point apiSpeech --runtime nodejs10 --trigger-http --region us-central1 --allow-unauthenticated
+gcloud functions deploy text-to-speech \
+  --entry-point apiTextToSpeech \
+  --runtime nodejs10 \
+  --trigger-http \
+  --region us-central1 \
+  --set-env-vars STORAGE_BUCKET=$STORAGE_BUCKET \
+  --allow-unauthenticated
 ```
 

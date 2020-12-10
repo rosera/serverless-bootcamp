@@ -1,18 +1,21 @@
-# Serverless Days Demo
-
 ## Small Talk
 
 
-A combination of a HTML web app and Cloud Functions
+Google Cloud Serverless example
 
+## Enable API
 
-### Web Application
-
+- [ ] Enable Translation API
 
 
 ### Cloud Functions
 
+- [ ] Uses the Translation API
+- [ ] Deploy the Cloud Function
+
+
+
 ```
-gcloud functions deploy text-translate --entry-point apiTranslate --runtime nodejs10 --trigger-http --region us-central1 --allow-unauthenticated
+gcloud functions deploy text-to-translation --entry-point apiTextToTranslation --runtime nodejs10 --trigger-http --region us-central1 --allow-unauthenticated
 ```
 

@@ -9,13 +9,17 @@ const util = require('util');
 const {Storage} = require('@google-cloud/storage');
 const storage = new Storage();
 
-
+const STORAGE_BUCKET = process.env.STORAGE_BUCKET || 'N/A'
 
 // Process the audio file
 async function googleSpeechAPI(req, res) {
-  let message  = req.query.msg || 'Cloud Functions speech translation';
+  let message  = req.query.msg   || 'Cloud Functions speech translation';
   let filename = req.query.fname || 'test';
-  let lang     = req.query.lang || 'en-UK';
+  let lang     = req.query.lang  || 'en-UK';
+
+  // Only process if the Storage Bucket has been set
+  console.log(`Storage Bucket: ${STORAGE_BUCKET} !!`);
+  if (STORAGE_BUCKET === 'N/A') return res.status(500);
 
   console.log('Message: ' + message);
   console.log('Language: ' + lang);
@@ -26,11 +30,11 @@ async function googleSpeechAPI(req, res) {
 
   // The text to synthesize
   // Project Storage Bucket 
-//  const myBucket = storage.bucket('roselabs-demos');
-  const myBucket = storage.bucket('roselabs-cloud-functions');
+  //const myBucket = storage.bucket('roselabs-cloud-functions');
+  const myBucket    = storage.bucket(STORAGE_BUCKET);
   const destination = filename + '.mp3';
-  const tempName = '/tmp/' + destination;
-  const file = myBucket.file(destination);
+  const tempName    = '/tmp/' + destination;
+  const file        = myBucket.file(destination);
 
   // Add CORS to the response header
   res.header("Access-Control-Allow-Origin", "*");
@@ -66,7 +70,6 @@ async function googleSpeechAPI(req, res) {
        console.log('Success - Audio file output: ' + destination);
 
        // Return a filename
-//       res.status(200).send(`filename: ${destination}`);
        res.status(200).json(destination);
   });
 
@@ -74,6 +77,6 @@ async function googleSpeechAPI(req, res) {
 }
 
 // Create a audio file based on the message sent
-exports.apiSpeech=(req, res)=>{
+exports.apiTextToSpeech=(req, res)=>{
   googleSpeechAPI(req, res);
 }

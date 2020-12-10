@@ -18,7 +18,7 @@ async function translationService(text, target, res) {
   }
 }
 
-exports.apiTranslate = (req, res) => {
+exports.apiTextToTranslation = (req, res) => {
   let msg = req.query.msg || 'Hello';
   let lang = req.query.lang || 'fr';
 
