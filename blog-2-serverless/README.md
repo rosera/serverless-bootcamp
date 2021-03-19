@@ -2,6 +2,6 @@
 
 Demo Project to show how to build a Hugo blog and automate deployment using Cloud Build.
 
-- [] 01-lab: Blogging with Hugo
-- [] 02-lab: Setting up a Cloud Build Trigger
-- [] 03-lab: Hugo site automation with Cloud Build
+- [x] 01-lab: Create an Example blog
+- [ ] 02-lab: Building a Hugo image
+- [ ] 03-lab: Deploying a Hugo blog with Cloud Build
