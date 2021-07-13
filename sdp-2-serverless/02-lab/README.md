@@ -81,5 +81,5 @@ The above code presents a HTML page to present a list of languages.
 
 #### Display the web content
 
-![small-talk](https://github.com/rosera/serverless-bootcamp/blob/master/sdp-2-serverless/images/02-lab-small-talk.png "Small Talk app")
+![small-talk](https://github.com/rosera/serverless-bootcamp/blob/main/sdp-2-serverless/images/02-lab-small-talk.png "Small Talk app")
 
