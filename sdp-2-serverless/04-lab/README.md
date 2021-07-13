@@ -2,11 +2,11 @@
 
 ## What am I building
 
-![small-talk](https://github.com/rosera/serverless-bootcamp/blob/master/sdp-2-serverless/images/03-lab-small-talk.png "Small Talk app")
+![small-talk](https://github.com/rosera/serverless-bootcamp/blob/main/sdp-2-serverless/images/03-lab-small-talk.png "Small Talk app")
 
 This example uses updates a web based application to use googleapis. In the demo, the web application will use the [Google Cloud Translate]((https://cloud.google.com/translate/docs/languages)) api to translate a message to a a defined language.
 
-![architecture](https://github.com/rosera/serverless-bootcamp/blob/master/sdp-2-serverless/images/04-arch-small-talk.png "Small Talk architecture")
+![architecture](https://github.com/rosera/serverless-bootcamp/blob/main/sdp-2-serverless/images/04-arch-small-talk.png "Small Talk architecture")
 
 ## How do I build it
 
