@@ -30,5 +30,5 @@ Code Structure
 
 #### Display the web content
 
-![small-talk](https://github.com/rosera/serverless-bootcamp/blob/master/sdp-2-serverless/images/03-lab-small-talk.png "Small Talk app")
+![small-talk](https://github.com/rosera/serverless-bootcamp/blob/main/sdp-2-serverless/images/03-lab-small-talk.png "Small Talk app")
 
