@@ -1,9 +1,5 @@
 # Frontend
 
-
-## Clone t
-
-
 ## Language Setup
 
 Languages are dynamically enabled via the `language.json` file
