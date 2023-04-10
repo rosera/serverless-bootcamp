@@ -56,4 +56,4 @@ The above code presents a HTML page using a form to capture user data.
 
 #### Display the web content
 
-![web-app](https://github.com/rosera/serverless-bootcamp/blob/master/web-2-serverless/images/01-lab-web-app.png "Basic HTML app")
+![web-app](https://github.com/rosera/serverless-bootcamp/blob/main/web-2-serverless/images/01-lab-web-app.png "Basic HTML app")
