@@ -75,8 +75,8 @@ formControl.addEventListener('submit', (event) => {
 
 #### Display the web content
 
-![web-app](https://github.com/rosera/serverless-bootcamp/blob/master/web-2-serverless/images/01-lab-web-app.png "Basic HTML app")
+![web-app](https://github.com/rosera/serverless-bootcamp/blob/main/web-2-serverless/images/01-lab-web-app.png "Basic HTML app")
 
 #### Adding the call to JavaScript renders a conversion
 
-![web-app with js](https://github.com/rosera/serverless-bootcamp/blob/master/web-2-serverless/images/02-lab-web-app-js.png "Basic HTML with js")
+![web-app with js](https://github.com/rosera/serverless-bootcamp/blob/main/web-2-serverless/images/02-lab-web-app-js.png "Basic HTML with js")
