@@ -1,7 +1,13 @@
+import './style.css';
+import brand from './assets/house-design.png'
+
 // Use the values from the HTML page
 const formControl = document.querySelector('form');
 const inputControl = document.querySelector('input');
 const outputControl = document.querySelector('#conversion');
+
+const imgBrand = document.getElementById('imgBrand')
+imgBrand.src = brand
 
 // Set the output to blank when the screen starts
 outputControl.textContent = '';

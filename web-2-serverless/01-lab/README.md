@@ -19,12 +19,18 @@ At the end of this example you will have a web page that renders the example con
 
 ```
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
+  <link rel="icon" href="house-design.png">
+  <title>Welcome to Webpack</title>
 </head>
+
 <body>
   <div class="main-content">
     <header>
+      <img id="imgBrand" alt="Brand Image"/>
       <h1>Hectares to Acres<h1>
     <header>
     <form>
@@ -33,6 +39,7 @@ At the end of this example you will have a web page that renders the example con
     </form>
     <p id=conversion></p>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
 ```
@@ -45,7 +52,6 @@ The above code presents a HTML page using a form to capture user data.
 * define a form
 ** input control to enter a measurement
 ** button control to initiate an event
-
 
 
 ## Running the code

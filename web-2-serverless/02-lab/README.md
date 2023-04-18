@@ -12,8 +12,8 @@ Add some JavaScript (js) code to the HTML page to perform a calculation:
 Our app will take the content entered on the form and perform a calculation
 
  
-* Create a file called `app.js`
-* Add the following code to the `app.js` file
+* Create a file called `main.js`
+* Add the following code to the `main.js` file
 
 ### Accessing HTML controls 
 
