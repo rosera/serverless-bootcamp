@@ -1,5 +1,5 @@
-# Hello Web Server 
+# Hello Webpack
  
 
 ## Scenario
- Add a simple web server to render the web page
+ Add a simple web configuration to render the web page
