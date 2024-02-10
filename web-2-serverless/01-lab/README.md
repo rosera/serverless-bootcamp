@@ -3,7 +3,7 @@
 ## Scenario
 
 In this lab you will build a web page. The web page will convert Hectares to Acres. 
-The code below represents a simple web form. In the exmaple the user will be required to:
+The code below represents a simple web form. In the example the user will be required to:
 
 * Enter a numeric value
 * Press the button to display an output 
