@@ -1,14 +1,14 @@
 {
-  "name": "htmx-api",
+  "name": "htmx_api",
   "version": "1.0.0",
-  "description": "Introduction to HTMX Lab01",
+  "description": "First HTMX API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "HTMX"
+    "htmx"
   ],
   "author": "Rich Rose",
   "license": "MIT",

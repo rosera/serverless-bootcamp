@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Welcome to HTMX</title>
+  <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+</head>
+<body>
+  <div class="main-content">
+    <header>
+      <h1>Hectares to Acres<h1>
+    <header>
+    <form hx-post="/calc" hx-target="#conversion" >
+      <input placeholder="Hectares" name="hectares" id="hectares" type="number" maxlength="255">
+      <button type="submit">Convert</button>
+    </form>
+    <p id=conversion></p>
+  </div>
+</body>
+</html>
